@@ -41,6 +41,9 @@ namespace IntelligenceLab
             Console.WriteLine("3. Grouping based on LVQ algorithm");
             Thread.Sleep(50);
 
+            Console.WriteLine("4. Exit Intelligence Lab");
+            Thread.Sleep(50);
+
             Console.WriteLine("Select the program you want to execute:");
         }
     }

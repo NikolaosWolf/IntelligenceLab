@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelligenceLab", "Intellig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGenerator", "DataSetGenerator\DataGenerator.csproj", "{A35D7746-BFC6-4F46-B42A-CEDBCB209F03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultilevelPerceptron", "MultilevelPerceptron\MultilevelPerceptron.csproj", "{9C3D502C-EDC1-4957-AF02-03333496FD5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A35D7746-BFC6-4F46-B42A-CEDBCB209F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A35D7746-BFC6-4F46-B42A-CEDBCB209F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A35D7746-BFC6-4F46-B42A-CEDBCB209F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3D502C-EDC1-4957-AF02-03333496FD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3D502C-EDC1-4957-AF02-03333496FD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3D502C-EDC1-4957-AF02-03333496FD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3D502C-EDC1-4957-AF02-03333496FD5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
