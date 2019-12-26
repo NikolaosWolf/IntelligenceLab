@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelligenceLab", "IntelligenceLab\IntelligenceLab.csproj", "{26BB4027-BF3C-4602-B794-AE6B4C2954E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSetGenerator", "DataSetGenerator\DataSetGenerator.csproj", "{A35D7746-BFC6-4F46-B42A-CEDBCB209F03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGenerator", "DataSetGenerator\DataGenerator.csproj", "{A35D7746-BFC6-4F46-B42A-CEDBCB209F03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

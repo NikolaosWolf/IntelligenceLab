@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataSetGenerator\DataSetGenerator.csproj" />
+    <ProjectReference Include="..\DataSetGenerator\DataGenerator.csproj" />
   </ItemGroup>
 
 </Project>
