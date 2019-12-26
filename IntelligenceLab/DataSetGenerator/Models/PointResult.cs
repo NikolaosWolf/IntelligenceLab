@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DataSetGenerator.Models
+namespace DataGenerator.Models
 {
     public class PointResult
     {
@@ -11,6 +11,7 @@ namespace DataSetGenerator.Models
             Square2 = new HashSet<Point>();
             Square3 = new HashSet<Point>();
             Square4 = new HashSet<Point>();
+            Square5 = new HashSet<Point>();
         }
 
         public ISet<Point> Circle { get; set; }
@@ -22,5 +23,7 @@ namespace DataSetGenerator.Models
         public ISet<Point> Square3 { get; set; }
         
         public ISet<Point> Square4 { get; set; }
+
+        public ISet<Point> Square5 { get; set; }
     }
 }

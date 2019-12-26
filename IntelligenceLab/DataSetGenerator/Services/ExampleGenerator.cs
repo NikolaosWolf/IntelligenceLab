@@ -1,21 +1,43 @@
-﻿using DataSetGenerator.Models;
-using DataSetGenerator.Models.Enums;
+﻿using DataGenerator.Models;
+using DataGenerator.Models.Enums;
 using System;
+using System.Collections.Generic;
+using System.Threading;
 
-namespace DataSetGenerator.Services
+namespace DataGenerator.Services
 {
     public class ExampleGenerator
     {
+        private int progress = 0;
         public ExampleResult GenerateExamples()
         {
             Random rnd = new Random();
 
-            ExampleResult result = new ExampleResult();
+            ExampleResult examples = new ExampleResult
+            {
+                LearningSet = GenerateLearningSet(rnd),
+                ControlSet = GenerateControlSet(rnd)
+            };
 
-            #region Learning Set Examples
+            return examples;
+        }
+
+        private ISet<Example> GenerateLearningSet(Random rnd)
+        {
+            HashSet<Example> learningSet = new HashSet<Example>();
 
             for (int i = 0; i < 3000; i++)
             {
+                if (i % 60 == 0)
+                {
+                    Console.Clear();
+
+                    progress++;
+
+                    Console.WriteLine("{0}%", progress);
+                    Thread.Sleep(10);
+                }
+
                 Example newExample = new Example()
                 {
                     X1 = (rnd.NextDouble() * 4) - 2,
@@ -43,15 +65,28 @@ namespace DataSetGenerator.Services
                     newExample.Category = CategoryType.Category1;
                 }
 
-                result.LearningSet.Add(newExample);
+                learningSet.Add(newExample);
             }
 
-            #endregion
+            return learningSet;
+        }
 
-            #region Control Set Examples
+        private ISet<Example> GenerateControlSet(Random rnd)
+        {
+            HashSet<Example> controlSet = new HashSet<Example>();
 
             for (int i = 0; i < 3000; i++)
             {
+                if (i % 60 == 0)
+                {
+                    Console.Clear();
+
+                    progress++;
+
+                    Console.WriteLine("{0}%", progress);
+                    Thread.Sleep(10);
+                }
+
                 Example newExample = new Example()
                 {
                     X1 = (rnd.NextDouble() * 4) - 2,
@@ -79,13 +114,10 @@ namespace DataSetGenerator.Services
                     newExample.Category = CategoryType.Category1;
                 }
 
-                result.ControlSet.Add(newExample);
+                controlSet.Add(newExample);
             }
 
-            #endregion
-
-
-            return result;
+            return controlSet;
         }
     }
 }

@@ -1,6 +1,6 @@
-﻿using DataSetGenerator.Models.Enums;
+﻿using DataGenerator.Models.Enums;
 
-namespace DataSetGenerator.Models
+namespace DataGenerator.Models
 {
     public class Example
     {

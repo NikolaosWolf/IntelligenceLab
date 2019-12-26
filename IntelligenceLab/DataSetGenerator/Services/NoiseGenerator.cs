@@ -1,17 +1,12 @@
-﻿using DataSetGenerator.Models;
-using DataSetGenerator.Models.Enums;
+﻿using DataGenerator.Models;
+using DataGenerator.Models.Enums;
 using System;
 using System.Collections.Generic;
 
-namespace DataSetGenerator.Services
+namespace DataGenerator.Services
 {
     public class NoiseGenerator
     {
-        public NoiseGenerator()
-        {
-
-        }
-
         public ISet<Example> GenerateNoise(ISet<Example> learningSet)
         {
             Random rnd = new Random();

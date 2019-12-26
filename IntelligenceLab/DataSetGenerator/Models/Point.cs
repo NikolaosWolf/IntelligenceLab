@@ -1,4 +1,4 @@
-﻿namespace DataSetGenerator.Models
+﻿namespace DataGenerator.Models
 {
     public class Point
     {

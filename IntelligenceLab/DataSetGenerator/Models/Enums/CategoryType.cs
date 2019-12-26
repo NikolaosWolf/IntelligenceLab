@@ -1,4 +1,4 @@
-﻿namespace DataSetGenerator.Models.Enums
+﻿namespace DataGenerator.Models.Enums
 {
     public enum CategoryType
     {

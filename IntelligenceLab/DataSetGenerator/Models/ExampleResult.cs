@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using DataGenerator.Models;
+using System.Collections.Generic;
 
-namespace DataSetGenerator.Models
+namespace DataGenerator.Models
 {
     public class ExampleResult
     {
